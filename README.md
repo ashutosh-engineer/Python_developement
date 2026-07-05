@@ -9,7 +9,12 @@ This repository contains my **Python Development Stats** - a showcase of every c
 - Core Python concepts and fundamentals
 - Object-oriented programming (OOP)
 - Functional programming
-- Data structures and algorithms
+-how browser works how it search you request and show you
+-System design concepts
+-Databases
+-redis
+-saclabilty
+<!-- - Data structures and algorithms -->
 - Web development frameworks
 - Databases and ORMs
 - API development
