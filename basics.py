@@ -1,4 +1,0 @@
-#variales
-#mutabilty
-#Identity
-
