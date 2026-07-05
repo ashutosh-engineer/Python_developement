@@ -50,4 +50,6 @@ equality checks at values but identity check  objects thats why in is case it wi
 
 '''
 Refrence counting where it checks how many varibales refrence or point to same memory block or object;
+And when eh count become 0 cpython can delete the object;
+cpython is the standard python 
 '''
