@@ -64,3 +64,4 @@ def querry(**kwargs):
 
 
 querry(id=2 , is_superuser=True)
+#it convert it into the dictionary;
