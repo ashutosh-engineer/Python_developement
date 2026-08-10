@@ -26,15 +26,36 @@ e2.give_increment(2000)
 #Class methods are used to operate with the class level
 #HEre cls is directly passed instead of any object adress(self);
 
-class dbs:
-    conductor_name="Ashutosh"
+# class dbs:
+#     conductor_name="Ashutosh"
 
-    @classmethod
-    def change_conductor_name(cls, new_name):
-        cls.conductor_name=new_name
+#     @classmethod
+#     def change_conductor_name(cls, new_name):
+#         cls.conductor_name=new_name
 
 
-e1=dbs()
-e1. change_conductor_name("Sumit")
-print(e1.conductor_name)
+# e1=dbs()
+# e1. change_conductor_name("Sumit")
+# print(e1.conductor_name)
+
+
+
+#Static methods
+#static methods are the methods that dont rely on cls attribut eor instance attributes like @classmethod
+#or static methods
+#it is wrapped in a class to show that method is logically belong to the same class only;
+#no self passed or cls passsed just need attibuut eto work on;
+
+class mechnaic:
+    def __init__(self, mechanic_name, mechanic_salary):
+        self.mechanic_name=mechanic_name
+        self.mechnaic_salary=mechanic_salary
+
+    @staticmethod
+    def check_salary(mechanic_salary):
+        return mechanic_salary >= 2500
+
+
+e1=mechnaic("Ashutosh", 2500)
+print(e1.check_salary(2500))
 
