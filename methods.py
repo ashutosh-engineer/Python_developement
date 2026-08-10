@@ -22,21 +22,21 @@ e2.give_increment(2000)
 
 
 
-#@classmethod
-#Class methods are used to operate with the class level
-#HEre cls is directly passed instead of any object adress(self);
+# @classmethod
+# Class methods are used to operate with the class level
+# HEre cls is directly passed instead of any object adress(self);
 
-# class dbs:
-#     conductor_name="Ashutosh"
+class dbs:
+    conductor_name="Ashutosh"
 
-#     @classmethod
-#     def change_conductor_name(cls, new_name):
-#         cls.conductor_name=new_name
+    @classmethod
+    def change_conductor_name(cls, new_name):
+        cls.conductor_name=new_name
 
 
-# e1=dbs()
-# e1. change_conductor_name("Sumit")
-# print(e1.conductor_name)
+e1=dbs()
+e1. change_conductor_name("Sumit")
+print(e1.conductor_name)
 
 
 
@@ -59,3 +59,12 @@ class mechnaic:
 e1=mechnaic("Ashutosh", 2500)
 print(e1.check_salary(2500))
 
+
+#Bounds method
+e1 = Employee("Ashutosh", 50000)
+
+method_ref = e1.give_raise   # NOT calling it yet -- just referencing it
+print(method_ref)   
+# <bound method Employee.give_raise of <__main__.Employee object at 0x...>>
+
+method_ref(5000)   # this works exactly like e1.give_raise(5000)
