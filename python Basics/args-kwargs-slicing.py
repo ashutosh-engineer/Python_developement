@@ -48,7 +48,7 @@ for name ,(lat ,long) in data:
 
 
 #args/kwargs
-#*args-varibale poitional Arguement
+#*args-varibale poistional Arguement
 #**kwargs varibale dictionary arguement
 
 def add(*addi):
@@ -65,3 +65,14 @@ def querry(**kwargs):
 
 querry(id=2 , is_superuser=True)
 #it convert it into the dictionary;
+
+#Undestanding Kwargs For better way;
+# in kwarsg argeuments are passed like key value pair;
+
+def user_info(**kwargs):
+    print(kwargs)
+
+
+user_info(name="Ashutosh" , id=2)
+#it will be passed as an Dictinary to the function;
+
