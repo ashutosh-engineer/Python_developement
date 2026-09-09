@@ -53,3 +53,4 @@ print(id)
 emails = ["a@gmail.com", "b@yahoo.com", "c@gmail.com", "d@yahoo.com"]
 unique_domain = {email.split("@")[1] for email in emails}
 print(unique_domain)
+
