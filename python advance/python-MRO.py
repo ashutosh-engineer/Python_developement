@@ -35,4 +35,22 @@ print(C.__mro__)
 '''
 
 
+class A:
+    def greet(self):
+        print("Hello from A")
 
+class B(A):
+    def greet(self):
+        print("Hello from A")
+
+class C(A):
+    def greet(self):
+        print("Hello from A")
+
+class D(B, C):
+    pass
+
+D().greet()
+# Now kiska Greet pehle chlega
+
+# <D, B, C , A , object>
