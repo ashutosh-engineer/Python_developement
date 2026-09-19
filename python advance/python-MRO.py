@@ -42,15 +42,32 @@ class A:
 class B(A):
     def greet(self):
         print("Hello from A")
+        super().greet()
 
 class C(A):
     def greet(self):
         print("Hello from A")
+        super().greet()
 
 class D(B, C):
     pass
 
 D().greet()
 # Now kiska Greet pehle chlega
-
 # <D, B, C , A , object>
+
+
+
+# Now understanding how super method 
+# Calls according to rules of MRO
+
+
+print(D.__mro__)
+
+# Debugging MRO
+# Whenever there is a bug in complex inheritance 
+#Use __mro__ or mro() to check
+
+# Super is next in MRo not direct parrent Method
+
+
