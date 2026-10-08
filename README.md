@@ -8,7 +8,8 @@ Welcome! Ye repository Python ko basics se advanced concepts tak practice karne 
 2. **Practice Exercises**: mutability, unpacking, caching, closures aur real-world mini problems.
 3. **Intermediate Python and OOP**: classes, methods, properties, abstraction, inheritance aur polymorphism.
 4. **Advanced Python**: generators, dunder methods, descriptors, type hints, concurrency aur `asyncio`.
-5. **Networking Fundamentals**: URL enter karne ke baad browser ke andar hone wala complete flow.
+5. **Flask Web Development**: WSGI, Flask application setup, routing, request methods aur dynamic routes.
+6. **Networking Fundamentals**: URL enter karne ke baad browser ke andar hone wala complete flow.
 
 ## Repository Map
 
@@ -76,7 +77,25 @@ Welcome! Ye repository Python ko basics se advanced concepts tak practice karne 
 - [Multiprocessing](python%20advance/multiprocessing.py) - threading concepts, GIL aur `multiprocessing.Process` se process creation.
 - [`asyncio`](python%20advance/asyncio_demo.py) - coroutines, `async`/`await`, event loop, tasks aur `asyncio.gather`.
 
-### 4. Networking and Browser Internals
+### 4. Flask Web Development
+
+- [WSGI and Flask basics](flask/WSGI.py) - WSGI ka purpose, Flask application object, local development server aur Gunicorn workers.
+- [Flask routing](flask/routing.py) - routes, request methods, dynamic route converters, subdomains aur URL dispatching.
+
+Install Flask before running these examples:
+
+```bash
+pip install flask
+```
+
+Run a Flask example with:
+
+```bash
+python flask/WSGI.py
+python flask/routing.py
+```
+
+### 5. Networking and Browser Internals
 
 - [How a browser works](Networking/browser-internals.md) - browser cache, OS cache/host file, DNS resolution, TCP handshake, TLS handshake, HTTP request/response aur browser rendering.
 - Security notes bhi included hain: DNS flooding, host-file poisoning prevention aur SYN-flooding based DDoS attacks.

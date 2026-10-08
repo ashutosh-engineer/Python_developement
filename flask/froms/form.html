@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+
+    <form method="POST" action="/submit">
+
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ name or '' }}">
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ email or '' }}">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    {% if name or email %}
+        <p>{{ name }} and email is {{ email }}</p>
+    {% endif %}
+
+</body>
+</html>

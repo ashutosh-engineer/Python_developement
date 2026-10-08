@@ -8,7 +8,6 @@ class emp:
 
     def __len__(self):
         return len(self.name)
-
 e = emp()
 print(len(e))
 
